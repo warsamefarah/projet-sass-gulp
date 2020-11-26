@@ -22,7 +22,7 @@ function sass() {
 
 // SCSS WATCHER
 function watcher(done) {
-    watch('./sass/import.scss', sass)
+    watch('./sass/', sass)
     browserSync.reload();
     done();
 }

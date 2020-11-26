@@ -1,0 +1,15 @@
+.firstSec {
+    height: $window;
+    background: url('assets/img/wave.svg');
+    font-family: $font1;
+    img:first-child{
+        display: $flex;
+        justify-items: flex-end;
+    }
+}
+
+h1 {
+    &::after {
+        content: "For Business!";
+    }
+}
