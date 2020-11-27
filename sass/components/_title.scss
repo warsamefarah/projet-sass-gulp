@@ -1,0 +1,14 @@
+h1 {
+    font-weight: $reg;
+    font-size: 60px;
+    color: $grey;
+    text-transform: $uppercase;
+    line-height: 80px;
+    &::after {
+        content: "For Business!";
+        font-weight: $bold;
+        font-size: 84px;
+        color: $grey;
+        text-transform: $uppercase;
+    }
+}

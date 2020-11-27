@@ -1,15 +1,39 @@
 .firstSec {
-    height: $window;
-    background: url('assets/img/wave.svg');
-    font-family: $poppins;
-    img:first-child{
-        display: $flex;
-        justify-items: flex-end;
-    }
-}
 
-h1 {
-    &::after {
-        content: "For Business!";
+    height: $windowH;
+    width: $windowW;
+    font-family: $poppins;
+
+    .content {
+        display: $flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        
+        article {
+            width: 50%;
+            // transform: scale(1.3);
+        }
+
+        aside {
+            width: 50%;
+            justify-content: space-around;
+        }
+    }
+
+    .bgimg-1{
+        position: $absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        rotate: 0.1deg;
+    }
+
+    p {
+        text-transform: $uppercase;
+        color: $lightgreyb;
+        font-weight: $light;
+        padding-bottom: 21px;
+        font-size: 1.12rem;
     }
 }

@@ -1,18 +1,39 @@
 // FONT SETTINGS
+// FONTS
 $poppins: Poppins, sans-serif;
 $lato: Lato, sans-serif;
+$dosis: Dosis, sans-serif;
 $uppercase: uppercase;
+// WEIGHTS
+$light: 300;
+$reg: 400;
+$med: 500;
+$bold: 700;
 
-// HEIGHT
-$window: 100vh;
+// COLORS
+$white: #FFFFFF;
+$grey: #42495B;
+$grey2: #484848;
+$lightgreyb: #7A839E;
+$gradblue: linear-gradient(to left, #6156F9, #1A129F);
 
-// FLEXBOX
+// DIMENSIONS
+$windowW: 100vw;
+$windowH: 70vh;
+
+// DISPLAY OPTIONS
 $flex: flex;
-$justaround: space-between;
+$justify: space-between;
+$align: center;
+$inBl: inline-block;
 
 // POSITIONS
 $absolute: absolute;
 $fixed: fixed;
 
-// IMAGES
-$blueWaveTop: url('assets/img/wave.svg');
+// PADDING
+$paddingHeader: 30px 10%;
+$paddingLi: 0 20px;
+$paddingXL: 20px 0 0 15%;
+$paddingCta: 13px 45px;
+$paddingMouse: 38px

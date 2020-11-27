@@ -1,9 +1,32 @@
 header {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    padding: 30px 10%;
+    width: 90%;
+    margin: auto;
+
+    .logo {
+        span {
+            font-family: $dosis;
+            font-weight: $bold;
+            font-size: 40px;
+            color: $grey2;
+        }
+    }
+
     nav {
         ul {
-            width: 120px;
-            display: $flex;
-            justify-content: $justaround;
+            text-transform: $uppercase;
+            li {
+                display: $inBl;
+                padding: $paddingLi;
+                font-family: $poppins;
+                font-weight: $med;
+                a {
+                    color: $white;
+                }
+            }
         }
     }
 }

@@ -10,17 +10,108 @@ li {
   list-style: none; }
 
 .firstSec {
-  height: 100vh;
-  background: url("assets/img/wave.svg");
+  height: 70vh;
+  width: 100vw;
   font-family: Poppins, sans-serif; }
-  .firstSec img:first-child {
+  .firstSec .content {
     display: flex;
-    justify-items: flex-end; }
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center; }
+    .firstSec .content article {
+      width: 50%; }
+    .firstSec .content aside {
+      width: 50%;
+      justify-content: space-around; }
+  .firstSec .bgimg-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    rotate: 0.1deg; }
+  .firstSec p {
+    text-transform: uppercase;
+    color: #7A839E;
+    font-weight: 300;
+    padding-bottom: 21px;
+    font-size: 1.12rem; }
 
-h1::after {
-  content: "For Business!"; }
-
-header nav ul {
-  width: 120px;
+header {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  width: 90%;
+  margin: auto; }
+  header .logo span {
+    font-family: Dosis, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #484848; }
+  header nav ul {
+    text-transform: uppercase; }
+    header nav ul li {
+      display: inline-block;
+      padding: 0 20px;
+      font-family: Poppins, sans-serif;
+      font-weight: 500; }
+      header nav ul li a {
+        color: #FFFFFF; }
+
+.cta {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 13px 45px;
+  background: linear-gradient(to left, #6156F9, #1A129F);
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 50px;
+  border: none; }
+
+h1 {
+  font-weight: 400;
+  font-size: 60px;
+  color: #42495B;
+  text-transform: uppercase;
+  line-height: 80px; }
+  h1::after {
+    content: "For Business!";
+    font-weight: 700;
+    font-size: 84px;
+    color: #42495B;
+    text-transform: uppercase; }
+
+.firstSec article {
+  padding: 20px 0 0 15%; }
+
+.firstSec aside {
+  display: flex;
+  align-items: center; }
+
+.firstSec .phone {
+  width: 100%;
+  margin: auto; }
+
+.firstSec #mouse {
+  width: 28px;
+  height: 41px;
+  background: url(../../assets/picto/mouse.svg) no-repeat center center;
+  padding: 38px;
+  border-radius: 50px;
+  box-shadow: 0 0.7rem 0.7rem 0.1rem rgba(0, 0, 0, 0.3); }
+
+.firstSec .icons {
+  position: absolute;
+  top: 50%;
+  left: 5rem; }
+  .firstSec .icons ul {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .firstSec .icons ul:last-child::after {
+      content: "";
+      background: linear-gradient(to left, #6156F9, #1A129F);
+      width: 3px;
+      height: 29px; }
