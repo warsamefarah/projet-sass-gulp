@@ -1,9 +1,9 @@
-// FONT SETTINGS
 // FONTS
 $poppins: Poppins, sans-serif;
 $lato: Lato, sans-serif;
 $dosis: Dosis, sans-serif;
 $uppercase: uppercase;
+
 // WEIGHTS
 $light: 300;
 $reg: 400;
@@ -19,12 +19,12 @@ $gradblue: linear-gradient(to left, #6156F9, #1A129F);
 
 // DIMENSIONS
 $windowW: 100vw;
-$windowH: 70vh;
+$windowH: 85vh;
 
 // DISPLAY OPTIONS
 $flex: flex;
-$justify: space-between;
-$align: center;
+$around: space-around;
+$center: center;
 $inBl: inline-block;
 
 // POSITIONS
@@ -32,8 +32,8 @@ $absolute: absolute;
 $fixed: fixed;
 
 // PADDING
-$paddingHeader: 30px 10%;
+// $paddingHeader: 30px 10%;
 $paddingLi: 0 20px;
 $paddingXL: 20px 0 0 15%;
 $paddingCta: 13px 45px;
-$paddingMouse: 38px
+$paddingMouse: 38px;

@@ -1,0 +1,10 @@
+.secondSec {
+    width: 100%;
+    height: $windowH;
+
+    .content2 {
+        display: $flex;
+        justify-content: $around;
+        align-items: $center;
+    }
+}

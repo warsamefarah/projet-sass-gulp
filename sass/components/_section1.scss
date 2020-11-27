@@ -1,12 +1,28 @@
 .firstSec{
-    article {
-        padding: $paddingXL;
+    height: $windowH;
+    width: 100%;
+    font-family: $poppins;
+
+    .content1 {
+        width: 100%;
+        display: $flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+
+        article {
+            padding: $paddingXL;
+            width: 50%;
+        }
+    
+        aside {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 50%;
+        }
     }
 
-    aside {
-        display: flex;
-        align-items: center;
-    }
 
     .phone {
         width: 100%;
@@ -41,5 +57,21 @@
             }
 
         }
+    }
+
+    .bgimg-1{
+        position: $absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        rotate: 0.1deg;
+    }
+
+    p {
+        text-transform: $uppercase;
+        color: $lightgreyb;
+        font-weight: $light;
+        padding-bottom: 21px;
+        font-size: 1.12rem;
     }
 }

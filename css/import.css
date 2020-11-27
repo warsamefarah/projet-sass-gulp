@@ -9,39 +9,15 @@ a {
 li {
   list-style: none; }
 
-.firstSec {
-  height: 70vh;
-  width: 100vw;
-  font-family: Poppins, sans-serif; }
-  .firstSec .content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center; }
-    .firstSec .content article {
-      width: 50%; }
-    .firstSec .content aside {
-      width: 50%;
-      justify-content: space-around; }
-  .firstSec .bgimg-1 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    rotate: 0.1deg; }
-  .firstSec p {
-    text-transform: uppercase;
-    color: #7A839E;
-    font-weight: 300;
-    padding-bottom: 21px;
-    font-size: 1.12rem; }
+body {
+  width: 100%; }
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 30px 10%;
-  width: 90%;
+  height: 15vh;
+  width: 100%;
   margin: auto; }
   header .logo span {
     font-family: Dosis, sans-serif;
@@ -82,36 +58,57 @@ h1 {
     color: #42495B;
     text-transform: uppercase; }
 
-.firstSec article {
-  padding: 20px 0 0 15%; }
-
-.firstSec aside {
-  display: flex;
-  align-items: center; }
-
-.firstSec .phone {
+.firstSec {
+  height: 85vh;
   width: 100%;
-  margin: auto; }
-
-.firstSec #mouse {
-  width: 28px;
-  height: 41px;
-  background: url(../../assets/picto/mouse.svg) no-repeat center center;
-  padding: 38px;
-  border-radius: 50px;
-  box-shadow: 0 0.7rem 0.7rem 0.1rem rgba(0, 0, 0, 0.3); }
-
-.firstSec .icons {
-  position: absolute;
-  top: 50%;
-  left: 5rem; }
-  .firstSec .icons ul {
-    height: 200px;
+  font-family: Poppins, sans-serif; }
+  .firstSec .content1 {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-    .firstSec .icons ul:last-child::after {
-      content: "";
-      background: linear-gradient(to left, #6156F9, #1A129F);
-      width: 3px;
-      height: 29px; }
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center; }
+    .firstSec .content1 article {
+      padding: 20px 0 0 15%;
+      width: 50%; }
+    .firstSec .content1 aside {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 50%; }
+  .firstSec .phone {
+    width: 100%;
+    margin: auto; }
+  .firstSec #mouse {
+    width: 28px;
+    height: 41px;
+    background: url(../../assets/picto/mouse.svg) no-repeat center center;
+    padding: 38px;
+    border-radius: 50px;
+    box-shadow: 0 0.7rem 0.7rem 0.1rem rgba(0, 0, 0, 0.3); }
+  .firstSec .icons {
+    position: absolute;
+    top: 50%;
+    left: 5rem; }
+    .firstSec .icons ul {
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .firstSec .icons ul:last-child::after {
+        content: "";
+        background: linear-gradient(to left, #6156F9, #1A129F);
+        width: 3px;
+        height: 29px; }
+  .firstSec .bgimg-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    rotate: 0.1deg; }
+  .firstSec p {
+    text-transform: uppercase;
+    color: #7A839E;
+    font-weight: 300;
+    padding-bottom: 21px;
+    font-size: 1.12rem; }
