@@ -39,6 +39,19 @@ h4 {
     color: $grey;
 }
 
+.newstl {
+    @extend h2;
+    text-transform: $no;
+    font-size: 32px;
+    font-weight: $reg;
+
+    &::after {
+        content: "special news?";
+        font-weight: $semib;
+        text-transform: $cap;
+    }
+}
+
 .artdef-We {
     font-family: $dosis;
     font-weight: $reg;

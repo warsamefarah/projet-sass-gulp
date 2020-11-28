@@ -34,6 +34,11 @@ header {
       header nav ul li a {
         color: #FFFFFF; }
 
+footer {
+  height: 100vh;
+  background: url(../../assets/img/footer.png) no-repeat center bottom;
+  background-size: 100vw; }
+
 .cta, .cta-2 {
   text-transform: uppercase;
   color: #FFFFFF;
@@ -61,7 +66,7 @@ h1 {
     color: #42495B;
     text-transform: uppercase; }
 
-h2, h3, h4 {
+h2, h3, h4, .newstl {
   font-family: Poppins, sans-serif;
   font-weight: 600;
   font-size: 50px;
@@ -80,6 +85,15 @@ h4 {
   font-weight: 400;
   font-size: 28px;
   color: #42495B; }
+
+.newstl {
+  text-transform: none;
+  font-size: 32px;
+  font-weight: 400; }
+  .newstl::after {
+    content: "special news?";
+    font-weight: 600;
+    text-transform: capitalize; }
 
 .artdef-We, .artdef-Offer, .artdef-Price, .artdef-News {
   font-family: Dosis, sans-serif;
@@ -228,4 +242,16 @@ h4 {
         font-size: 16px; }
 
 .fifthSec {
-  height: 100vh; }
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px; }
+  .fifthSec input[type=text] {
+    width: 500px;
+    height: 52px;
+    margin: 1.5rem 1rem 0 0;
+    padding-left: 1rem;
+    background-color: #F6F7FB;
+    border: none; }

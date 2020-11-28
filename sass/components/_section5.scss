@@ -1,3 +1,17 @@
 .fifthSec {
-    height: $windowH;
+    height: $windowH/5;
+    width: 100%;
+    display: $flex;
+    flex-direction: $col;
+    align-items: $center;
+    padding-top: 150px;
+
+    input[type=text] {
+        width: 500px;
+        height: 52px;
+        margin: $marginInputT;
+        padding-left: 1rem;
+        background-color: $lightergrey;
+        border: $no;
+    }
 }
