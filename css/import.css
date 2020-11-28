@@ -34,7 +34,7 @@ header {
       header nav ul li a {
         color: #FFFFFF; }
 
-.cta {
+.cta, .cta-2 {
   text-transform: uppercase;
   color: #FFFFFF;
   padding: 13px 45px;
@@ -44,6 +44,9 @@ header {
   font-size: 16px;
   border-radius: 50px;
   border: none; }
+
+.cta-2 {
+  padding: 6px 18px; }
 
 h1 {
   font-weight: 400;
@@ -58,12 +61,25 @@ h1 {
     color: #42495B;
     text-transform: uppercase; }
 
-h2 {
+h2, h3, h4 {
   font-family: Poppins, sans-serif;
   font-weight: 600;
   font-size: 50px;
   color: #42495B;
   text-transform: capitalize; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  color: #1000FF;
+  font-size: 30px; }
+
+.pricetl {
+  font-family: Dosis, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: #42495B; }
 
 .artdef-We, .artdef-Offer, .artdef-Price, .artdef-News {
   font-family: Dosis, sans-serif;
@@ -144,8 +160,7 @@ h2 {
       width: 50%; }
     .secondSec .content2 article {
       padding: 20px 15% 0 0;
-      width: 50%;
-      margin-right: -10%; }
+      width: 50%; }
       .secondSec .content2 article p {
         width: 80%;
         font-family: Poppins, sans-serif;
@@ -153,3 +168,64 @@ h2 {
         font-size: 16px;
         color: #7A839E;
         padding-bottom: 41px; }
+
+.thirdSec {
+  background: url(../../assets/img/background-service.png) no-repeat center; }
+  .thirdSec .cardlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 8%; }
+    .thirdSec .cardlist .card {
+      width: 350px;
+      height: 400px;
+      background-color: #FFFFFF;
+      margin: 50px 80px;
+      border-radius: 36px;
+      box-shadow: 0 0.7rem 0.7rem 0.1rem rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      padding: 0 20px;
+      position: relative; }
+      .thirdSec .cardlist .card p {
+        font-family: Lato, sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: #42495B; }
+      .thirdSec .cardlist .card .cta-2 {
+        position: relative;
+        right: -25%; }
+
+.fourthSec {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  background-color: #EBEAFE; }
+  .fourthSec .cardlist {
+    display: flex; }
+    .fourthSec .cardlist .card {
+      width: 350px;
+      height: 400px;
+      background-color: #FFFFFF;
+      margin: 50px 80px;
+      border-radius: 36px;
+      box-shadow: 0 0.7rem 0.7rem 0.1rem rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      padding: 0 20px;
+      text-align: center; }
+      .fourthSec .cardlist .card p {
+        font-family: Poppins, sans-serif;
+        font-weight: 300;
+        color: #7A839E;
+        font-size: 16px; }
+
+.fifthSec {
+  height: 100vh; }

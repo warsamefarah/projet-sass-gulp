@@ -21,6 +21,24 @@ h2 {
     text-transform: $cap;
 }
 
+h3 {
+    @extend h2;
+    font-size: 18px;
+}
+
+h4 {
+    @extend h2;
+    color: $blue;
+    font-size: 30px;
+}
+
+.pricetl {
+    font-family: $dosis;
+    font-weight: $reg;
+    font-size: 28px;
+    color: $grey;
+}
+
 .artdef-We {
     font-family: $dosis;
     font-weight: $reg;

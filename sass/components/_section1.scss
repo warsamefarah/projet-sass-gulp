@@ -6,9 +6,9 @@
     .content1 {
         width: 100%;
         display: $flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        align-items: center;
+        justify-content: $around;
+        flex-wrap: $wr;
+        align-items: $center;
 
         article {
             padding: $paddingL;
@@ -16,9 +16,9 @@
         }
     
         aside {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
+            display: $flex;
+            align-items: $center;
+            justify-content: $around;
             width: 50%;
         }
     }
@@ -35,7 +35,7 @@
         background: url(../../assets/picto/mouse.svg) no-repeat center center;
         padding: $paddingMouse;
         border-radius: 50px;
-        box-shadow: 0 0.7rem 0.7rem 0.1rem rgba($color: #000000, $alpha: 0.3);
+        box-shadow: $shad
     }
 
     .icons {

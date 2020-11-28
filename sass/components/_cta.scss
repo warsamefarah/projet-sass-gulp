@@ -6,6 +6,11 @@
     font-family: $poppins;
     font-weight: $med;
     font-size: 16px;
-    border-radius: 50px;
-    border: none;
+    border-radius: $btnRad;
+    border: $no;
+}
+
+.cta-2 {
+    @extend .cta;
+    padding: $paddingCta2;
 }
