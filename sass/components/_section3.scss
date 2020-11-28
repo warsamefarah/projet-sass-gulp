@@ -1,6 +1,14 @@
 .thirdSec {
     background: url(../../assets/img/background-service.png) no-repeat center;
 
+    h2 {
+        padding: $paddingL;
+    }
+
+    span {
+        padding: $paddingL;
+    }
+
     .cardlist {
         display: $flex;
         flex-wrap: $wr;

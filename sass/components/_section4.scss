@@ -8,12 +8,13 @@
     background-color: $lightBG;
 
     .cardlist {
+        width: 100%;
         display: $flex;
+        justify-content: $around;
         .card {
             width: $cardW;
             height: $cardH;
             background-color: $white;
-            margin: $marginCard;
             border-radius: $cardRad;
             box-shadow: $shad;
             display: $flex;

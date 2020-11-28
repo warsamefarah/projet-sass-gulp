@@ -6,11 +6,15 @@
 a {
   text-decoration: none; }
 
-li {
+li, footer nav ul:not(#foot-icon) li a {
   list-style: none; }
 
 body {
-  width: 100%; }
+  width: 100%;
+  position: relative; }
+
+main {
+  padding-bottom: 60vh; }
 
 header {
   display: flex;
@@ -26,18 +30,71 @@ header {
     color: #484848; }
   header nav ul {
     text-transform: uppercase; }
-    header nav ul li {
+    header nav ul li, header footer nav ul:not(#foot-icon) li a, footer header nav ul:not(#foot-icon) li a {
       display: inline-block;
       padding: 0 20px;
       font-family: Poppins, sans-serif;
       font-weight: 500; }
-      header nav ul li a {
+      header nav ul li a, header footer nav ul:not(#foot-icon) li a a, footer header nav ul:not(#foot-icon) li a a {
         color: #FFFFFF; }
 
 footer {
-  height: 100vh;
-  background: url(../../assets/img/footer.png) no-repeat center bottom;
-  background-size: 100vw; }
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-size: 100vw;
+  position: absolute;
+  bottom: 0; }
+  footer .bgimg-2 {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100%; }
+  footer nav {
+    height: 75%;
+    width: 90%;
+    display: flex;
+    position: absolute;
+    bottom: 0; }
+    footer nav #foot-icon {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+    footer nav ul:not(#foot-icon) {
+      height: 80%;
+      padding: 0 10rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      footer nav ul:not(#foot-icon) li, footer nav ul:not(#foot-icon) li a {
+        font-family: Poppins, sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        color: #FFFFFF; }
+      footer nav ul:not(#foot-icon) span {
+        font-family: Poppins, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #FFFFFF; }
+    footer nav .txt {
+      height: 10%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      footer nav .txt span:first-child {
+        font-family: Dosis, sans-serif;
+        font-weight: 800;
+        font-size: 50px;
+        color: #FFFFFF; }
+      footer nav .txt span:last-child {
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        font-size: 2.5rem;
+        color: #FFFFFF; }
 
 .cta, .cta-2 {
   text-transform: uppercase;
@@ -185,6 +242,10 @@ h4 {
 
 .thirdSec {
   background: url(../../assets/img/background-service.png) no-repeat center; }
+  .thirdSec h2, .thirdSec h3, .thirdSec h4, .thirdSec .newstl {
+    padding: 20px 0 0 15%; }
+  .thirdSec span {
+    padding: 20px 0 0 15%; }
   .thirdSec .cardlist {
     display: flex;
     flex-wrap: wrap;
@@ -221,12 +282,13 @@ h4 {
   padding-top: 150px;
   background-color: #EBEAFE; }
   .fourthSec .cardlist {
-    display: flex; }
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
     .fourthSec .cardlist .card {
       width: 350px;
       height: 400px;
       background-color: #FFFFFF;
-      margin: 50px 80px;
       border-radius: 36px;
       box-shadow: 0 0.7rem 0.7rem 0.1rem rgba(0, 0, 0, 0.3);
       display: flex;
@@ -242,7 +304,7 @@ h4 {
         font-size: 16px; }
 
 .fifthSec {
-  height: 20vh;
+  height: 40vh;
   width: 100%;
   display: flex;
   flex-direction: column;
