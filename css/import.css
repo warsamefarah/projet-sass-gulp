@@ -58,8 +58,24 @@ h1 {
     color: #42495B;
     text-transform: uppercase; }
 
+h2 {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  color: #42495B;
+  text-transform: capitalize; }
+
+.artdef-We, .artdef-Offer, .artdef-Price, .artdef-News {
+  font-family: Dosis, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #7E76F9; }
+
+.artdef-Offer {
+  text-transform: uppercase; }
+
 .firstSec {
-  height: 85vh;
+  height: 100vh;
   width: 100%;
   font-family: Poppins, sans-serif; }
   .firstSec .content1 {
@@ -112,3 +128,28 @@ h1 {
     font-weight: 300;
     padding-bottom: 21px;
     font-size: 1.12rem; }
+
+.secondSec {
+  width: 100%;
+  height: 100vh; }
+  .secondSec .content2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url("../../assets/img/background-we-are.png") no-repeat right; }
+    .secondSec .content2 aside {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 50%; }
+    .secondSec .content2 article {
+      padding: 20px 15% 0 0;
+      width: 50%;
+      margin-right: -10%; }
+      .secondSec .content2 article p {
+        width: 80%;
+        font-family: Poppins, sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        color: #7A839E;
+        padding-bottom: 41px; }

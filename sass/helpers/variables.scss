@@ -2,12 +2,16 @@
 $poppins: Poppins, sans-serif;
 $lato: Lato, sans-serif;
 $dosis: Dosis, sans-serif;
+
+//TEXT TRANSFORM
 $uppercase: uppercase;
+$cap: capitalize;
 
 // WEIGHTS
 $light: 300;
 $reg: 400;
 $med: 500;
+$semib: 600;
 $bold: 700;
 
 // COLORS
@@ -15,11 +19,13 @@ $white: #FFFFFF;
 $grey: #42495B;
 $grey2: #484848;
 $lightgreyb: #7A839E;
+$lightpurple: #7E76F9;
 $gradblue: linear-gradient(to left, #6156F9, #1A129F);
 
 // DIMENSIONS
 $windowW: 100vw;
-$windowH: 85vh;
+$windowH: 100vh;
+// $windowSec1: 85vh;
 
 // DISPLAY OPTIONS
 $flex: flex;
@@ -34,6 +40,7 @@ $fixed: fixed;
 // PADDING
 // $paddingHeader: 30px 10%;
 $paddingLi: 0 20px;
-$paddingXL: 20px 0 0 15%;
+$paddingL: 20px 0 0 15%;
+$paddingR: 20px 15% 0 0;
 $paddingCta: 13px 45px;
 $paddingMouse: 38px;

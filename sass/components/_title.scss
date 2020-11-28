@@ -12,3 +12,31 @@ h1 {
         text-transform: $uppercase;
     }
 }
+
+h2 {
+    font-family: $poppins;
+    font-weight: $semib;
+    font-size: 50px;
+    color: $grey;
+    text-transform: $cap;
+}
+
+.artdef-We {
+    font-family: $dosis;
+    font-weight: $reg;
+    font-size: 20px;
+    color: $lightpurple;
+}
+
+.artdef-Offer {
+    @extend .artdef-We;
+    text-transform: $uppercase;
+}
+
+.artdef-Price {
+    @extend .artdef-We
+}
+
+.artdef-News {
+    @extend .artdef-We
+}
