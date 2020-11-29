@@ -3,10 +3,13 @@
 @include phone {
     // HEADER
     header {
+
         .burger {
             display: block;
         }
+
         .logo {
+
             span {
                 color: $white !important;
             }
@@ -20,7 +23,7 @@
     // FOOTER
     footer {
         height: $windowH;
-        
+
         .bgimg-2 {
             width: 50%;
             top: 0;
@@ -31,7 +34,7 @@
             flex-direction: $col;
             background: $gradblueF;
             width: $full;
-            
+
             #foot-icon {
                 width: $full !important;
 
@@ -50,38 +53,40 @@
             ul:not(#foot-icon) {
                 width: $full;
                 align-items: $center;
+
                 li {
                     display: $no;
                 }
-
             }
-
         }
     }
 
     // PAGE CONTAINER
     main {
         padding-bottom: 100px;
+
         // FIRST SECTION
         .firstSec {
             height: $windowH*0.8;
 
             .content1 {
                 padding-top: $paddingT;
+
                 article {
                     width: $full;
                     text-align: $center;
                     padding: 20px 0 0 0;
-                   
+
                     h1 {
                         color: $white;
                         font-size: 2rem;
+
                         &::after{
                             color: $white;
                             font-size: 3rem;
                         }
                     }
-                   
+
                     p {
                         color: $white;
                     }
@@ -110,6 +115,7 @@
             height: $windowH*0.9;
 
             .content2 {
+
                 aside {
                     display: none;
                 }
@@ -160,6 +166,7 @@
             height: $windowH*2.1;
 
             .cardlist {
+                
                 .card {
                     margin-top: $marginT;
                 }
