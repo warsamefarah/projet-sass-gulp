@@ -14,3 +14,10 @@
     @extend .cta;
     padding: $paddingCta2;
 }
+
+.cta-3 {
+    @extend .cta;
+    background: $white;
+    border: 1px solid $blue;
+    color: $blue;
+}

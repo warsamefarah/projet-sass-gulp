@@ -2,59 +2,213 @@
   header .burger {
     display: block; }
   header .logo span {
-    color: #000000; }
+    color: #FFFFFF !important; }
   header nav {
     display: none; }
-  main .firstSec {
-    height: 80vh; }
-    main .firstSec .content1 {
-      padding-top: 20px; }
-      main .firstSec .content1 article {
+  footer {
+    height: 100vh; }
+    footer .bgimg-2 {
+      width: 50%;
+      top: 0; }
+    footer nav {
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(to left, #4d41fd, #1A129F, #1A129F);
+      width: 100%; }
+      footer nav #foot-icon {
+        width: 100% !important; }
+        footer nav #foot-icon li, footer nav #foot-icon ul:not(#foot-icon) li a, footer nav ul:not(#foot-icon) li #foot-icon a {
+          display: none; }
+        footer nav #foot-icon .txt span {
+          display: block; }
+      footer nav ul:not(#foot-icon) {
         width: 100%;
-        text-align: center;
-        padding: 20px 0 0 0; }
-        main .firstSec .content1 article h1 {
-          color: #FFFFFF;
-          font-size: 2rem; }
-          main .firstSec .content1 article h1::after {
+        align-items: center; }
+        footer nav ul:not(#foot-icon) li, footer nav ul:not(#foot-icon) li a {
+          display: none; }
+  main {
+    padding-bottom: 100px; }
+    main .firstSec {
+      height: 80vh; }
+      main .firstSec .content1 {
+        padding-top: 20px; }
+        main .firstSec .content1 article {
+          width: 100%;
+          text-align: center;
+          padding: 20px 0 0 0; }
+          main .firstSec .content1 article h1 {
             color: #FFFFFF;
-            font-size: 3rem; }
-        main .firstSec .content1 article p {
-          color: #FFFFFF; }
-      main .firstSec .content1 aside {
-        display: none;
-        position: absolute;
-        z-index: -1;
+            font-size: 2rem; }
+            main .firstSec .content1 article h1::after {
+              color: #FFFFFF;
+              font-size: 3rem; }
+          main .firstSec .content1 article p {
+            color: #FFFFFF; }
+        main .firstSec .content1 aside {
+          display: none;
+          position: absolute;
+          z-index: -1;
+          width: 100%;
+          opacity: 0.5; }
+        main .firstSec .content1 #mouse {
+          display: none; }
+    main .secondSec {
+      height: 90vh; }
+      main .secondSec .content2 aside {
+        display: none; }
+      main .secondSec .content2 article {
+        padding: 20px;
+        margin: 0;
         width: 100%;
-        opacity: 0.5; }
-      main .firstSec .content1 #mouse {
-        display: none; }
-  main .secondSec {
-    height: 130vh; }
-    main .secondSec .content2 aside {
-      opacity: 0.5;
-      z-index: -1; }
-      main .secondSec .content2 aside picture img {
-        display: none; }
-    main .secondSec .content2 article {
-      padding: 20px;
-      margin: 0;
-      width: 100%;
-      text-align: center; }
-  main .thirdSec {
-    height: 550vh;
-    background-repeat: repeat;
-    background-size: contain; }
-    main .thirdSec .cardlist .card {
-      width: 80%;
-      height: 600px;
-      text-align: center; }
-      main .thirdSec .cardlist .card .cta-2 {
-        position: static; }
-  main .fourthSec {
-    height: 220vh; }
-    main .fourthSec .cardlist .card {
-      margin-top: 50px; } }
+        text-align: center; }
+        main .secondSec .content2 article p {
+          margin: auto;
+          text-align: justify; }
+    main .thirdSec {
+      height: 360vh;
+      background-repeat: repeat;
+      background-size: contain; }
+      main .thirdSec h2, main .thirdSec h3, main .thirdSec h4, main .thirdSec .newstl {
+        padding: 0 20px; }
+      main .thirdSec .cardlist {
+        padding: 0; }
+        main .thirdSec .cardlist .card {
+          width: 80%;
+          height: 400px;
+          text-align: center;
+          margin: 0;
+          margin-top: 50px; }
+          main .thirdSec .cardlist .card .cta-2 {
+            position: static; }
+    main .fourthSec {
+      height: 210vh; }
+      main .fourthSec .cardlist .card {
+        margin-top: 50px; }
+    main .fifthSec {
+      text-align: center;
+      padding: 0; }
+      main .fifthSec h2, main .fifthSec h3, main .fifthSec h4, main .fifthSec .newstl {
+        padding-top: 20px; }
+      main .fifthSec form {
+        display: flex;
+        flex-direction: column; }
+        main .fifthSec form input[type=text] {
+          width: 80%;
+          margin-bottom: 50px; } }
+
+@media screen and (max-width: 768px) {
+  header .burger {
+    display: block; }
+  header .logo span {
+    color: #FFFFFF !important; }
+  footer {
+    height: 100vh; }
+    footer .bgimg-2 {
+      width: 50%;
+      top: 0; }
+    footer nav {
+      padding-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(to left, #4d41fd, #1A129F, #1A129F);
+      width: 100%; }
+      footer nav #foot-icon {
+        width: 40% !important;
+        height: 50%; }
+        footer nav #foot-icon .txt {
+          height: fit-content;
+          padding-bottom: 20px; }
+          footer nav #foot-icon .txt span {
+            display: block; }
+      footer nav ul:not(#foot-icon) {
+        width: 100%;
+        align-items: center; }
+        footer nav ul:not(#foot-icon) li, footer nav ul:not(#foot-icon) li a {
+          display: none; }
+  main {
+    padding-bottom: 100px; }
+    main .firstSec {
+      height: 100vh;
+      display: flex; }
+      main .firstSec .icons {
+        top: 5%;
+        left: 2.5rem; }
+      main .firstSec .content1 {
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap; }
+        main .firstSec .content1 article {
+          height: 50%;
+          width: 100%;
+          text-align: center;
+          padding: 20px 0 0 0; }
+          main .firstSec .content1 article h1 {
+            color: #42495B;
+            font-size: 2rem;
+            line-height: 50px; }
+            main .firstSec .content1 article h1::after {
+              color: #42495B;
+              font-size: 3rem; }
+          main .firstSec .content1 article p {
+            color: #42495B;
+            margin-bottom: 16.66667px; }
+        main .firstSec .content1 aside {
+          z-index: -1; }
+        main .firstSec .content1 #mouse {
+          display: none; }
+    main .secondSec {
+      height: 100vh; }
+      main .secondSec .content2 aside {
+        opacity: 0.4;
+        z-index: -1;
+        width: 40%; }
+      main .secondSec .content2 article {
+        width: 70%;
+        padding: 20px;
+        margin: 0;
+        text-align: center; }
+        main .secondSec .content2 article p {
+          color: #000000;
+          margin: auto;
+          text-align: justify; }
+    main .thirdSec {
+      height: 360vh;
+      background-repeat: repeat;
+      background-size: contain; }
+      main .thirdSec h2, main .thirdSec h3, main .thirdSec h4, main .thirdSec .newstl {
+        padding: 0 20px; }
+      main .thirdSec .cardlist {
+        padding: 0;
+        flex-direction: column;
+        align-items: center; }
+        main .thirdSec .cardlist .card {
+          width: 50%;
+          height: 400px;
+          text-align: center;
+          margin: 0;
+          margin-top: 50px; }
+    main .fourthSec {
+      height: 190vh;
+      padding-top: 20px; }
+      main .fourthSec .cardlist {
+        flex-direction: column;
+        align-items: center; }
+        main .fourthSec .cardlist .card {
+          margin-top: 50px; }
+    main .fifthSec {
+      text-align: center;
+      padding: 40px; }
+      main .fifthSec h2, main .fifthSec h3, main .fifthSec h4, main .fifthSec .newstl {
+        padding-top: 20px; }
+      main .fifthSec form {
+        display: flex;
+        flex-direction: column; }
+        main .fifthSec form input[type=text] {
+          width: 80%;
+          margin-bottom: 50px; } }
 
 * {
   margin: 0;
@@ -157,7 +311,7 @@ footer {
         font-size: 2.5rem;
         color: #FFFFFF; }
 
-.cta, .cta-2 {
+.cta, .cta-2, .cta-3 {
   text-transform: uppercase;
   color: #FFFFFF;
   padding: 13px 45px;
@@ -170,6 +324,11 @@ footer {
 
 .cta-2 {
   padding: 6px 18px; }
+
+.cta-3 {
+  background: #FFFFFF;
+  border: 1px solid #1000FF;
+  color: #1000FF; }
 
 h1 {
   font-weight: 400;
@@ -304,7 +463,8 @@ h4 {
 .thirdSec {
   background: url(../../assets/img/background-service.png) no-repeat center; }
   .thirdSec h2, .thirdSec h3, .thirdSec h4, .thirdSec .newstl {
-    padding: 20px 0 0 15%; }
+    padding: 20px 0 0 15%;
+    text-align: center; }
   .thirdSec span {
     padding: 20px 0 0 15%; }
   .thirdSec .cardlist {
