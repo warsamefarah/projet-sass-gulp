@@ -1,6 +1,6 @@
-// Media query du téléphone
+// Media query des tablettes
 
-@include phone {
+@include laptop {
     // HEADER
     header {
         .burger {
@@ -11,12 +11,8 @@
                 color: $white !important;
             }
         }
-        
-        nav {
-            display: $no;
-        }
     }
-    
+
     // FOOTER
     footer {
         height: $windowH;
@@ -27,32 +23,30 @@
         }
         
         nav {
+            padding-bottom: $paddingT;
             display: $flex;
-            flex-direction: $col;
+            align-items: $center;
+            justify-content: $around;
             background: $gradblueF;
-            width: $full;
+            width: $full*0.8;
+            height: $full*0.55 !important;
             
             #foot-icon {
-                width: $full !important;
-
-                li {
-                    display: $no;
-                }
+                height: 50%;
 
                 .txt {
-
+                    height: fit-content;
+                    padding-bottom: $paddingT;
                     span {
                         display: block;
+                        text-align: $center;
                     }
                 }
             }
 
             ul:not(#foot-icon) {
-                width: $full;
+                width: $full*0.2;
                 align-items: $center;
-                li {
-                    display: $no;
-                }
 
             }
 
@@ -64,39 +58,51 @@
         padding-bottom: 100px;
         // FIRST SECTION
         .firstSec {
-            height: $windowH*0.8;
+            height: $windowH;
+            display: $flex;
 
+            .icons {
+                top: 5%;
+                left: 2.5rem;
+            }
             .content1 {
+                width: $full;
+                height: $full;
                 padding-top: $paddingT;
+                flex-direction: column-reverse;
+                flex-wrap: nowrap;
+                align-items: $center;
                 article {
+                    height: $full/2;
                     width: $full;
                     text-align: $center;
                     padding: 20px 0 0 0;
                    
                     h1 {
-                        color: $white;
+                        color: $grey;
                         font-size: 2rem;
+                        line-height: 50px;
                         &::after{
-                            color: $white;
+                            color: $grey;
                             font-size: 3rem;
                         }
                     }
                    
                     p {
-                        color: $white;
+                        color: $grey;
+                        margin-bottom: $marginT/3;
                     }
                 }
 
                 aside {
-                    display: $no;
-                    position: $absolute;
                     z-index: -1;
-                    width: $full;
-                    opacity: 0.5;
-                }
-
-                .icons {
-                    display: $no;
+                    picture {
+                        display: $flex;
+                        justify-content: $center;
+                        img {
+                            width: $full*0.7;
+                        }
+                    }
                 }
 
                 #mouse {
@@ -107,20 +113,23 @@
 
         // SECOND SECTION
         .secondSec {
-            height: $windowH*0.9;
+            height: $windowH;
 
             .content2 {
                 aside {
-                    display: none;
+                    opacity: 0.4;
+                    z-index: -1;
+                    width: $full*0.4;
                 }
 
                 article {
+                    width: $full*0.7;
                     padding: $paddingT;
                     margin: 0;
-                    width: $full;
                     text-align: center;
 
                     p {
+                        color: $black;
                         margin: auto;
                         text-align: justify;
                     }
@@ -128,8 +137,8 @@
             }
         }
 
-        // THIRD SECTION
-        .thirdSec {
+         // THIRD SECTION
+         .thirdSec {
             height: $windowH*3.6;
             background-repeat: repeat;
             background-size: contain;
@@ -140,26 +149,26 @@
 
             .cardlist {
                 padding: 0;
+                flex-direction: $col;
+                align-items: $center;
 
                 .card {
-                    width: 80%;
+                    width: 50%;
                     height: 400px;
                     text-align: $center;
                     margin: 0;
                     margin-top: $marginT;
-
-                    .cta-2 {
-                        position: static;
-                    }
                 }
             }
         }
 
         // FOURTH SECTION
         .fourthSec {
-            height: $windowH*2.1;
-
+            height: $windowH*1.9;
+            padding-top: $paddingT;
             .cardlist {
+                flex-direction: $col;
+                align-items: $center;
                 .card {
                     margin-top: $marginT;
                 }
@@ -169,7 +178,7 @@
         // FIFTH SECTION
         .fifthSec {
             text-align: $center;
-            padding: 0;
+            padding: $paddingT*2;
 
             h2 {
                 padding-top: $paddingT;
@@ -186,5 +195,4 @@
             }
         }
     }
-
 }

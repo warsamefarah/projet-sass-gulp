@@ -7,19 +7,13 @@
 }
 
 @mixin tablet {
-    @media screen and (max-width: $tablet){
+    @media screen and (min-width: 376px) and (max-width: $tablet){
         @content;
     }
 }
 
 @mixin laptop {
-    @media screen and (max-width: $smallScreen){
-        @content;
-    }
-}
-
-@mixin desktop {
-    @media screen and (max-width: $desktop){
+    @media screen and (min-width: 769px) and (max-width: $smallScreen){
         @content;
     }
 }
