@@ -17,6 +17,7 @@ $exbold: 800;
 
 // COLORS
 $white: #FFFFFF;
+$black: #000000;
 $lightergrey: #F6F7FB;
 $grey: #42495B;
 $grey2: #484848;
@@ -34,6 +35,7 @@ $windowH: 100vh;
 // DIMENSIONS
 $cardW: 350px;
 $cardH: 400px;
+$full: 100%;
 
 // DISPLAY OPTIONS
 $flex: flex;
@@ -54,6 +56,7 @@ $rel: relative;
 $paddingLi: 0 20px;
 $paddingLiF: 0 10rem;
 $paddingL: 20px 0 0 15%;
+$paddingT: 20px;
 $paddingR: 20px 15% 0 0;
 $paddingCta: 13px 45px;
 $paddingCta2: 6px 18px;
@@ -63,6 +66,7 @@ $paddingB: 60vh;
 
 // MARGIN
 $marginR: -10%;
+$marginT: 50px;
 $marginCard: 50px 80px;
 $marginInputT: 1.5rem 1rem 0 0;
 
@@ -73,3 +77,9 @@ $cardRad: 36px;
 
 // SHADOWS
 $shad: 0 0.7rem 0.7rem 0.1rem rgba($color: #000000, $alpha: 0.3);
+
+// BREAKPOINTS
+$mobile: 375px;
+$tablet: 768px;
+$smallScreen: 1024px;
+$desktop: 1440px;

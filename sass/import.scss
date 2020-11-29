@@ -1,6 +1,7 @@
 // Éléments qui définissent les variables créées et les media queries
 @import "helpers/variables.scss";
 @import "helpers/breakpoints.scss";
+@import "helpers/mediaQuery-phone.scss";
 
 // Composants de la page
 @import "components/reset.scss";

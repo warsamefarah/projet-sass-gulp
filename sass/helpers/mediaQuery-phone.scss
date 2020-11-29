@@ -1,0 +1,121 @@
+// Media query du téléphone
+
+@include phone {
+    // HEADER
+    header {
+        .burger {
+            display: block;
+        }
+        .logo {
+            span {
+                color: $black;
+            }
+        }
+
+        nav {
+            display: $no;
+        }
+    }
+
+    // PAGE CONTAINER
+    main {
+        // FIRST SECTION
+        .firstSec {
+            height: $windowH*0.8;
+
+            .content1 {
+                padding-top: $paddingT;
+                article {
+                    width: $full;
+                    text-align: $center;
+                    padding: 20px 0 0 0;
+                   
+                    h1 {
+                        color: $white;
+                        font-size: 2rem;
+                        &::after{
+                            color: $white;
+                            font-size: 3rem;
+                        }
+                    }
+                   
+                    p {
+                        color: $white;
+                    }
+                }
+
+                aside {
+                    display: $no;
+                    position: $absolute;
+                    z-index: -1;
+                    width: $full;
+                    opacity: 0.5;
+                }
+
+                #mouse {
+                    display: $no;
+                }
+            }
+        }
+
+        // SECOND SECTION
+        .secondSec {
+            height: $windowH*1.3;
+
+            .content2 {
+                aside {
+                    opacity: 0.5;
+                    z-index: -1;
+                    picture {
+                        img {
+                            display: none;
+                        }
+                            
+                    }
+                }
+
+                article {
+                    padding: $paddingT;
+                    margin: 0;
+                    width: $full;
+                    text-align: center;
+                }
+            }
+        }
+
+        // THIRD SECTION
+        .thirdSec {
+            height: $windowH*5.5;
+            background-repeat: repeat;
+            background-size: contain;
+
+            .cardlist {
+
+                .card {
+                    width: 80%;
+                    height: 600px;
+                    text-align: $center;
+
+                    .cta-2 {
+                        position: static;
+                    }
+                }
+            }
+        }
+
+        // FOURTH SECTION
+        .fourthSec {
+            height: $windowH*2.2;
+
+            .cardlist {
+                .card {
+                    margin-top: $marginT;
+                }
+            }
+        }
+    }
+
+    // FOOTER
+    footer {
+    }
+}

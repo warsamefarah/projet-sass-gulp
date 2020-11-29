@@ -1,10 +1,10 @@
 .firstSec{
     height: $windowH;
-    width: 100%;
+    width: $full;
     font-family: $poppins;
 
     .content1 {
-        width: 100%;
+        width: $full;
         display: $flex;
         justify-content: $around;
         flex-wrap: $wr;
@@ -25,7 +25,7 @@
 
 
     .phone {
-        width: 100%;
+        width: $full;
         margin: auto;
     }
 
@@ -40,7 +40,7 @@
 
     .icons {
         position: $absolute;
-        top: 50%;
+        top: 500px;
         left: 5rem;
 
         ul {

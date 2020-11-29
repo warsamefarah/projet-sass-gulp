@@ -1,6 +1,6 @@
 footer {
     height: $windowH*0.6;
-    width: 100%;
+    width: $full;
     display: $flex;
     justify-content: $center;
     background-size: $windowW;
@@ -11,19 +11,20 @@ footer {
         position: $absolute;
         bottom: 0;
         z-index: -1;
-        width: 100%;
+        width: $full;
     }
 
     nav {
         height: 75%;
-        width: 90%;
+        width: $full;
         display: $flex;
+        justify-content: $around;
         position: $absolute;
         bottom: 0;
 
         #foot-icon {
             width: 20%;
-            height: 100%;
+            height: $full;
             display: $flex;
             justify-content: $around;
             flex-wrap: $wr;
@@ -31,7 +32,7 @@ footer {
 
         ul:not(#foot-icon) {
             height: 80%;
-            padding: $paddingLiF;
+            // padding: $paddingLiF;
             display: $flex;
             flex-direction: $col;
             justify-content: $around;
@@ -58,7 +59,7 @@ footer {
     
         .txt {
             height: 10%;
-            width: 100%;
+            width: $full;
             display: $flex;
             flex-direction: $col;
             align-items: $center;

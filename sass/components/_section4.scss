@@ -1,6 +1,6 @@
 .fourthSec {
     height: $windowH;
-    width: 100%;
+    width: $full;
     display: $flex;
     flex-direction: $col;
     align-items: $center;
@@ -8,9 +8,10 @@
     background-color: $lightBG;
 
     .cardlist {
-        width: 100%;
+        width: $full;
         display: $flex;
         justify-content: $around;
+        flex-wrap: $wr;
         .card {
             width: $cardW;
             height: $cardH;

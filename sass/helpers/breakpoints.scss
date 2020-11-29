@@ -1,1 +1,25 @@
-// Toutes les media queries sont contenues ici
+// Toutes les dimensions d'écrans sont regroupées ici
+
+@mixin phone {
+    @media screen and (max-width: $mobile){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: $tablet){
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (max-width: $smallScreen){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (max-width: $desktop){
+        @content;
+    }
+}
